@@ -15,3 +15,9 @@ SilverStripe 4
 `composer require fromholdio/silverstripe-errorpagesconfig`
 
 That's really about it. Intended to be very plug-n-play.
+
+## Screenshot
+
+After installing, your error pages should disappear from the CMS tree view, and you'll have the following gridfield in your CMS Settings area (or on your `Site` page objects if `symbiote/silverstripe-multisites` is also present). 
+
+![Error pages config](docs/en/_images/01-errorpagesconfig.png)
