@@ -1,0 +1,27 @@
+{
+	"name": "fromholdio/silverstripe-errorpagesconfig",
+	"type": "silverstripe-vendormodule",
+	"description": "A SilverStripe module to move ErrorPages out of the cms tree and into their own grid field in CMS Settings area.",
+	"license": "BSD-3-Clause",
+	"keywords": ["silverstripe", "cms", "errorpage"],
+	"homepage": "https://github.com/fromholdio/silverstripe-errorpagesconfig",
+	"support": {
+		"issues": "https://github.com/fromholdio/silverstripe-errorpagesconfig/issues"
+	},
+	"authors": [{
+		"name": "Luke Fromhold",
+		"homepage": "https://fromhold.io"
+	}],
+	"require": {
+		"php": ">=5.6",
+		"silverstripe/vendor-plugin": "^1.0",
+		"silverstripe/framework": "^4.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Fromholdio\\ErrorPagesConfig\\": "src/"
+		}
+	},
+	"prefer-stable": true,
+	"minimum-stability": "dev"
+}

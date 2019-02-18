@@ -1,0 +1,29 @@
+---
+Name: fromholdio-errorpagesconfig
+---
+SilverStripe\ErrorPage\ErrorPage:
+  hide_ancestor: SilverStripe\ErrorPage\ErrorPage
+  extensions:
+    - Fromholdio\ErrorPagesConfig\Extensions\ErrorPageExtension
+  summary_fields:
+    - Title
+    - CodeLabel
+  field_labels:
+    CodeLabel: 'Error Code'
+SilverStripe\ORM\Hierarchy\Hierarchy:
+  hide_from_cms_tree:
+    - SilverStripe\ErrorPage\ErrorPage
+---
+Only:
+  classexists: 'Symbiote\Multisites\Multisites'
+---
+Symbiote\Multisites\Model\Site:
+  extensions:
+    - Fromholdio\ErrorPagesConfig\Extensions\ConfigExtension
+---
+Except:
+  classexists: 'Symbiote\Multisites\Multisites'
+---
+Silverstripe\SiteConfig\SiteConfig:
+  extensions:
+    - Fromholdio\ErrorPagesConfig\Extensions\ConfigExtension
