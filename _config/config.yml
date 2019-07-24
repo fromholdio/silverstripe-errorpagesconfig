@@ -10,6 +10,7 @@ SilverStripe\ErrorPage\ErrorPage:
     - CodeLabel
   field_labels:
     CodeLabel: 'Error Code'
+  default_sort: 'ErrorCode'
 SilverStripe\ORM\Hierarchy\Hierarchy:
   hide_from_cms_tree:
     - SilverStripe\ErrorPage\ErrorPage
@@ -19,11 +20,11 @@ Only:
 ---
 Symbiote\Multisites\Model\Site:
   extensions:
-    - Fromholdio\ErrorPagesConfig\Extensions\ConfigExtension
+    - Fromholdio\ErrorPagesConfig\Extensions\SiteExtension
 ---
 Except:
   classexists: 'Symbiote\Multisites\Multisites'
 ---
 Silverstripe\SiteConfig\SiteConfig:
   extensions:
-    - Fromholdio\ErrorPagesConfig\Extensions\ConfigExtension
+    - Fromholdio\ErrorPagesConfig\Extensions\SiteConfigExtension
