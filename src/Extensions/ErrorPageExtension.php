@@ -8,7 +8,9 @@ class ErrorPageExtension extends DataExtension
 {
     public function getCodeLabel()
     {
-        if (!$this->owner->ErrorCode) return null;
-        return _t('SilverStripe\\ErrorPage\\ErrorPage.CODE_' . $this->owner->ErrorCode, $this->owner->ErrorCode);
+        if (!$this->getOwner()->ErrorCode) {
+            return null;
+        }
+        return _t('SilverStripe\\ErrorPage\\ErrorPage.CODE_' . $this->getOwner()->ErrorCode, $this->getOwner()->ErrorCode);
     }
 }
