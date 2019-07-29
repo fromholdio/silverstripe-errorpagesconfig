@@ -2,6 +2,7 @@
 
 namespace Fromholdio\ErrorPagesConfig\Extensions;
 
+use SilverStripe\ErrorPage\ErrorPage;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
